@@ -1,6 +1,4 @@
-plugins {
-    id 'java'
-}
+apply plugin: 'java'
 
 group = 'com.meteorplus'
 version = '1.0.0'
@@ -13,6 +11,11 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.10.1'
 }
 
-tasks.withType(JavaCompile).configureEach {
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
