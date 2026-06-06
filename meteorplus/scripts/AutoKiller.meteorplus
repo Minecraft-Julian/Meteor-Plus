@@ -1,0 +1,36 @@
+{
+  "name": "AutoKiller",
+  "description": "Auto aim and kill",
+  "createdAt": 1717678800000,
+  "lastModified": 1717678900000,
+  "blocks": [
+    {
+      "id": "on_start",
+      "params": {},
+      "nextBlockIndex": 1,
+      "childBlockIndices": []
+    },
+    {
+      "id": "say",
+      "params": {
+        "message": "AutoKiller aktiviert!"
+      },
+      "nextBlockIndex": 2,
+      "childBlockIndices": []
+    },
+    {
+      "id": "infinite_loop",
+      "params": {},
+      "nextBlockIndex": -1,
+      "childBlockIndices": [3]
+    },
+    {
+      "id": "touching",
+      "params": {
+        "block": "player"
+      },
+      "nextBlockIndex": 4,
+      "childBlockIndices": []
+    }
+  ]
+}

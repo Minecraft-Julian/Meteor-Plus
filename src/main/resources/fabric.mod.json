@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "meteorplus",
+  "version": "1.0.0",
+  "name": "MeteorPlus",
+  "description": "Scratch-ähnliches Scripting-System für Meteor Client.",
+  "authors": ["MeteorPlus"],
+  "entrypoints": {
+    "main": ["com.meteorplus.MeteorPlusMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.17.5",
+    "minecraft": "1.21.11",
+    "fabric": "*",
+    "meteor-client": "*"
+  }
+}

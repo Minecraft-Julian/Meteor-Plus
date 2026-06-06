@@ -1,0 +1,36 @@
+{
+  "name": "FastBridge",
+  "description": "Brücke automatisch bauen wenn SPACE gedrückt wird.",
+  "createdAt": 1717679000000,
+  "lastModified": 1717679000000,
+  "blocks": [
+    {
+      "id": "on_start",
+      "params": {},
+      "nextBlockIndex": 1,
+      "childBlockIndices": []
+    },
+    {
+      "id": "say",
+      "params": {
+        "message": "FastBridge gestartet!"
+      },
+      "nextBlockIndex": 2,
+      "childBlockIndices": []
+    },
+    {
+      "id": "infinite_loop",
+      "params": {},
+      "nextBlockIndex": -1,
+      "childBlockIndices": [3]
+    },
+    {
+      "id": "key_pressed",
+      "params": {
+        "key": "space"
+      },
+      "nextBlockIndex": 4,
+      "childBlockIndices": []
+    }
+  ]
+}
